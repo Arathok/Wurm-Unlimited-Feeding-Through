@@ -92,7 +92,7 @@ public class PollAnimals  {
                     {
                         for (Creature aCreature : creaturesOnTile)
                         {
-                            if (aCreature.hasTrait(Traits.TRAIT_CORRUPT))
+                            if (aCreature.hasTrait(Traits.TRAIT_CORRUPT)&&aCreature.isOnSurface())
                                 continue;
                             Item aFeedingThrough = Items.getItem(oneFeedingThrough.itemId);
                             Item food=findFood (aFeedingThrough,aCreature);
