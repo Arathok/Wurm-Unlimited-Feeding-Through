@@ -11,6 +11,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Properties;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class FeedingThrough implements WurmServerMod, Initable, PreInitable, Configurable, ItemTemplatesCreatedListener, ServerStartedListener, ServerPollListener, PlayerMessageListener{
@@ -38,7 +39,11 @@ public class FeedingThrough implements WurmServerMod, Initable, PreInitable, Con
 
     @Override
     public void onServerPoll() {
+        try {
             PollAnimals.poller();
+        } catch (NoSuchItemException e) {
+            logger.log(Level.SEVERE,"no such item! ",e);
+        }
     }
 
     @Override

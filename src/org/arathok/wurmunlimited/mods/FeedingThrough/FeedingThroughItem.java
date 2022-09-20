@@ -18,7 +18,7 @@ public class FeedingThroughItem {
         {
             radiusString = "on your Deed over time.";
         }
-        else radiusString = "in a radius of: "+String.valueOf(Config.radius)+" tiles";
+        else radiusString = "in a radius of: "+String.valueOf(Config.radiusPerTenQL)+" tiles";
         feedingThrough = new ItemTemplateBuilder("arathok.feedingThrough.feedingThrough.").name("Feeding Through",
                         "throughs",
                         "A wooden tub, made for animals to feed from it. Will feed any animal "+radiusString)
@@ -27,7 +27,7 @@ public class FeedingThroughItem {
                 .imageNumber((short) IconConstants.ICON_LARGE_CRATE)
                 .itemTypes(new short[] {
 
-                        //ItemTypes.ITEM_TYPE_BULK,
+                        ItemTypes.ITEM_TYPE_BULKCONTAINER,
                         ItemTypes.ITEM_TYPE_HOLLOW,
                         ItemTypes.ITEM_TYPE_TOOL,
                         ItemTypes.ITEM_TYPE_PLANTABLE,
