@@ -28,7 +28,6 @@ public class FeedingThroughItem {
                 .itemTypes(new short[] {
 
                         ItemTypes.ITEM_TYPE_BULKCONTAINER,
-                        ItemTypes.ITEM_TYPE_HOLLOW,
                         ItemTypes.ITEM_TYPE_TOOL,
                         ItemTypes.ITEM_TYPE_PLANTABLE,
                         ItemTypes.ITEM_TYPE_DECORATION,

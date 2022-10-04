@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="FeedingThrough">
+    <output-path>D:/Spiele/Steam/steamapps/common/Wurm Unlimited Dedicated Server/mods/FeedingThrough</output-path>
+    <root id="archive" name="FeedingThrough.jar">
+      <element id="module-output" name="Wurm-Unlimited-Feeding-Through" />
+    </root>
+  </artifact>
+</component>
